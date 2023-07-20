@@ -6,7 +6,8 @@ const bcrypt = require('bcrypt')
 require('../db/connection')
 const User = require('../models/userSchema')
 const authentication = require('../middleware/authentication')
-
+const cors= require('cors')
+router.use(cors())
 
 
 router.get('/',(req,res)=>{
